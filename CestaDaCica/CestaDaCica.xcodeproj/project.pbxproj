@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A7A00B45B2F7C2E8C4C7FB6 /* Pods_CestaDaCica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA017834575ECD2ADCFADD5D /* Pods_CestaDaCica.framework */; };
+		B1024C122A4116A7007FEDB6 /* OnBoardindScream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1024C112A4116A7007FEDB6 /* OnBoardindScream.swift */; };
 		B15EBFB32A40FFCE0091BEE5 /* CestaDaCicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15EBFB22A40FFCE0091BEE5 /* CestaDaCicaApp.swift */; };
 		B15EBFB52A40FFCE0091BEE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15EBFB42A40FFCE0091BEE5 /* ContentView.swift */; };
 		B15EBFB72A40FFCF0091BEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15EBFB62A40FFCF0091BEE5 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		56450DD0B7AEA90FE7DB5909 /* Pods-CestaDaCica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CestaDaCica.debug.xcconfig"; path = "Target Support Files/Pods-CestaDaCica/Pods-CestaDaCica.debug.xcconfig"; sourceTree = "<group>"; };
+		B1024C112A4116A7007FEDB6 /* OnBoardindScream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardindScream.swift; sourceTree = "<group>"; };
 		B15EBFAF2A40FFCE0091BEE5 /* CestaDaCica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CestaDaCica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15EBFB22A40FFCE0091BEE5 /* CestaDaCicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CestaDaCicaApp.swift; sourceTree = "<group>"; };
 		B15EBFB42A40FFCE0091BEE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B1024C102A411673007FEDB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1024C112A4116A7007FEDB6 /* OnBoardindScream.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B15EBFA62A40FFCE0091BEE5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		B15EBFB12A40FFCE0091BEE5 /* CestaDaCica */ = {
 			isa = PBXGroup;
 			children = (
+				B1024C102A411673007FEDB6 /* View */,
 				B1D434A52A411227006255C9 /* Model */,
 				B15EBFB22A40FFCE0091BEE5 /* CestaDaCicaApp.swift */,
 				B15EBFB42A40FFCE0091BEE5 /* ContentView.swift */,
@@ -228,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1024C122A4116A7007FEDB6 /* OnBoardindScream.swift in Sources */,
 				B15EBFB52A40FFCE0091BEE5 /* ContentView.swift in Sources */,
 				B15EBFB32A40FFCE0091BEE5 /* CestaDaCicaApp.swift in Sources */,
 				B1D434A72A411237006255C9 /* OnBoardingItem.swift in Sources */,

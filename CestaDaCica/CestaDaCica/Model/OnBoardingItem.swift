@@ -13,5 +13,5 @@ struct OnBoardingItem: Identifiable, Equatable {
     var id: UUID = .init()
     var title: String
     var subtitle: String
-    var lottieView: LottieView = .init()
+    var lottieView: AnimationView = .init()
 }
