@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7A00B45B2F7C2E8C4C7FB6 /* Pods_CestaDaCica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA017834575ECD2ADCFADD5D /* Pods_CestaDaCica.framework */; };
+		B1024C122A4116A7007FEDB6 /* OnBoardindScream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1024C112A4116A7007FEDB6 /* OnBoardindScream.swift */; };
 		B15EBFB32A40FFCE0091BEE5 /* CestaDaCicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15EBFB22A40FFCE0091BEE5 /* CestaDaCicaApp.swift */; };
 		B15EBFB52A40FFCE0091BEE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15EBFB42A40FFCE0091BEE5 /* ContentView.swift */; };
 		B15EBFB72A40FFCF0091BEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15EBFB62A40FFCF0091BEE5 /* Assets.xcassets */; };
 		B15EBFBA2A40FFCF0091BEE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15EBFB92A40FFCF0091BEE5 /* Preview Assets.xcassets */; };
+		B1B8A2C62A410C3900BC8685 /* three.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B8A2C32A410C3800BC8685 /* three.json */; };
+		B1B8A2C72A410C3900BC8685 /* one.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B8A2C42A410C3800BC8685 /* one.json */; };
+		B1B8A2C82A410C3900BC8685 /* two.json in Resources */ = {isa = PBXBuildFile; fileRef = B1B8A2C52A410C3900BC8685 /* two.json */; };
+		B1D434A72A411237006255C9 /* OnBoardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D434A62A411237006255C9 /* OnBoardingItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56450DD0B7AEA90FE7DB5909 /* Pods-CestaDaCica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CestaDaCica.debug.xcconfig"; path = "Target Support Files/Pods-CestaDaCica/Pods-CestaDaCica.debug.xcconfig"; sourceTree = "<group>"; };
+		B1024C112A4116A7007FEDB6 /* OnBoardindScream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardindScream.swift; sourceTree = "<group>"; };
 		B15EBFAF2A40FFCE0091BEE5 /* CestaDaCica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CestaDaCica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15EBFB22A40FFCE0091BEE5 /* CestaDaCicaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CestaDaCicaApp.swift; sourceTree = "<group>"; };
 		B15EBFB42A40FFCE0091BEE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B15EBFB62A40FFCF0091BEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B15EBFB92A40FFCF0091BEE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1B8A2C32A410C3800BC8685 /* three.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = three.json; sourceTree = "<group>"; };
+		B1B8A2C42A410C3800BC8685 /* one.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = one.json; sourceTree = "<group>"; };
+		B1B8A2C52A410C3900BC8685 /* two.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = two.json; sourceTree = "<group>"; };
+		B1D434A62A411237006255C9 /* OnBoardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingItem.swift; sourceTree = "<group>"; };
+		EDE4B8DE49113ED57FAC02E5 /* Pods-CestaDaCica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CestaDaCica.release.xcconfig"; path = "Target Support Files/Pods-CestaDaCica/Pods-CestaDaCica.release.xcconfig"; sourceTree = "<group>"; };
+		FA017834575ECD2ADCFADD5D /* Pods_CestaDaCica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CestaDaCica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +40,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7A00B45B2F7C2E8C4C7FB6 /* Pods_CestaDaCica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		297ED8BFB9196EE1E31002CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA017834575ECD2ADCFADD5D /* Pods_CestaDaCica.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4396C427CCB3FDBDA5DBEEEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56450DD0B7AEA90FE7DB5909 /* Pods-CestaDaCica.debug.xcconfig */,
+				EDE4B8DE49113ED57FAC02E5 /* Pods-CestaDaCica.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1024C102A411673007FEDB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1024C112A4116A7007FEDB6 /* OnBoardindScream.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B15EBFA62A40FFCE0091BEE5 = {
 			isa = PBXGroup;
 			children = (
+				B1B8A2C42A410C3800BC8685 /* one.json */,
+				B1B8A2C32A410C3800BC8685 /* three.json */,
+				B1B8A2C52A410C3900BC8685 /* two.json */,
 				B15EBFB12A40FFCE0091BEE5 /* CestaDaCica */,
 				B15EBFB02A40FFCE0091BEE5 /* Products */,
+				4396C427CCB3FDBDA5DBEEEB /* Pods */,
+				297ED8BFB9196EE1E31002CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +96,8 @@
 		B15EBFB12A40FFCE0091BEE5 /* CestaDaCica */ = {
 			isa = PBXGroup;
 			children = (
+				B1024C102A411673007FEDB6 /* View */,
+				B1D434A52A411227006255C9 /* Model */,
 				B15EBFB22A40FFCE0091BEE5 /* CestaDaCicaApp.swift */,
 				B15EBFB42A40FFCE0091BEE5 /* ContentView.swift */,
 				B15EBFB62A40FFCF0091BEE5 /* Assets.xcassets */,
@@ -67,6 +114,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B1D434A52A411227006255C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1D434A62A411237006255C9 /* OnBoardingItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B15EBFBD2A40FFCF0091BEE5 /* Build configuration list for PBXNativeTarget "CestaDaCica" */;
 			buildPhases = (
+				B5106A29416D8205668DC08E /* [CP] Check Pods Manifest.lock */,
 				B15EBFAB2A40FFCE0091BEE5 /* Sources */,
 				B15EBFAC2A40FFCE0091BEE5 /* Frameworks */,
 				B15EBFAD2A40FFCE0091BEE5 /* Resources */,
+				CC5A96F1134E85E34F24B706 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +184,65 @@
 			files = (
 				B15EBFBA2A40FFCF0091BEE5 /* Preview Assets.xcassets in Resources */,
 				B15EBFB72A40FFCF0091BEE5 /* Assets.xcassets in Resources */,
+				B1B8A2C72A410C3900BC8685 /* one.json in Resources */,
+				B1B8A2C82A410C3900BC8685 /* two.json in Resources */,
+				B1B8A2C62A410C3900BC8685 /* three.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5106A29416D8205668DC08E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CestaDaCica-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5A96F1134E85E34F24B706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CestaDaCica/Pods-CestaDaCica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CestaDaCica/Pods-CestaDaCica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CestaDaCica/Pods-CestaDaCica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B15EBFAB2A40FFCE0091BEE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1024C122A4116A7007FEDB6 /* OnBoardindScream.swift in Sources */,
 				B15EBFB52A40FFCE0091BEE5 /* ContentView.swift in Sources */,
 				B15EBFB32A40FFCE0091BEE5 /* CestaDaCicaApp.swift in Sources */,
+				B1D434A72A411237006255C9 /* OnBoardingItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +365,7 @@
 		};
 		B15EBFBE2A40FFCF0091BEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56450DD0B7AEA90FE7DB5909 /* Pods-CestaDaCica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +395,7 @@
 		};
 		B15EBFBF2A40FFCF0091BEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE4B8DE49113ED57FAC02E5 /* Pods-CestaDaCica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
