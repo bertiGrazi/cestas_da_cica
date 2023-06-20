@@ -22,16 +22,23 @@ struct OnBoardindScream: View {
             
             HStack(spacing: 0) {
                 ForEach($onboardingItems) { $item in
+                    let isLastSlide = (currentIndex == onboardingItems.count - 1)
                     VStack(spacing: 20) {
                         //MARK: - Top Nav Bar
                         HStack {
                             Button("Back") {
-                                
+                                if currentIndex > 0 {
+                                    currentIndex -= 1
+                                    playAnimation()
+                                }
                             }
+                            .opacity(currentIndex > 0 ? 1 : 0)
                             Spacer(minLength: 0)
                             Button("Skip") {
-                                
+                                currentIndex = onboardingItems.count - 1
+                                playAnimation()
                             }
+                            .opacity(isLastSlide ? 0 : 1)
                         }
                         .tint(Color("DarkVinho"))
                         .font(.system(size: 18, weight: .bold))
@@ -49,7 +56,7 @@ struct OnBoardindScream: View {
                                     }
                                 }
                                 .offset(x: offset)
-                                .animation(.easeInOut(duration: 0.5), value: currentIndex)
+                                .animation(.easeInOut(duration: 0.2), value: currentIndex)
                             
                             Text(item.title)
                                 .font(.title.bold())
@@ -69,20 +76,28 @@ struct OnBoardindScream: View {
                         
                         //MARK: - Next / Login View
                         VStack(spacing: 15) {
-                            Text("Next")
+                            let isLastSlide = (currentIndex == onboardingItems.count - 1)
+                            Text(isLastSlide ? "Login" : "Next")
                                 .font(.system(size: 18, weight: .bold))
                                 .foregroundColor(.white)
-                                .padding(.vertical, 12)
+                                .padding(.vertical, isLastSlide ? 13 : 12)
                                 .frame(maxWidth: .infinity)
                                 .background {
                                     Capsule()
                                         .fill(Color("DarkVinho"))
                                 }
-                                .padding(.horizontal, 100)
+                                .animation(.easeInOut, value: isLastSlide)
+                                .padding(.horizontal, isLastSlide ? 30 : 100)
                                 .onTapGesture {
                                     //MARK: - Updating to Next Index
                                     if currentIndex < onboardingItems.count - 1 {
+                                        //MARK: - Pausing Previous Animation
+                                        let currentProgress = onboardingItems[currentIndex].lottieView.currentProgress
+                                        onboardingItems[currentIndex].lottieView.currentProgress = (currentProgress == 0 ? 0.7 : currentProgress)
+                                        onboardingItems[currentIndex].lottieView.pause()
                                         currentIndex += 1
+                                        //MARK: - Playing Next Animation from Start
+                                        playAnimation()
                                     }
                                 }
                         }
@@ -93,6 +108,11 @@ struct OnBoardindScream: View {
             }
             .frame(width: size.width * CGFloat(onboardingItems.count), alignment: .leading)
         }
+    }
+    
+    func playAnimation() {
+        onboardingItems[currentIndex].lottieView.currentProgress = 0
+        onboardingItems[currentIndex].lottieView.play(toProgress: 0.7)
     }
     
     //MARK: - Retreving Index of the Item in the Array
